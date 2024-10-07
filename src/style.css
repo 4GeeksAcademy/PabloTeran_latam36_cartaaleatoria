@@ -1,1 +1,82 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+/* Fondo de la página en verde */
+body {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilo del título h1 */
+h1 {
+    margin-top: 20px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo general para la carta */
+.card {
+    width: 150px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: relative;
+    background-color: white;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: auto;
+}
+
+/* Estilos para las posiciones del contenido de la carta */
+.top-suit, .bottom-suit {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.top-suit {
+    top: 10px;
+    left: 10px;
+}
+
+.bottom-suit {
+    bottom: 10px;
+    right: 10px;
+    transform: rotate(180deg); /* Rotar el contenido para la parte inferior */
+}
+
+.middle-suit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Estilos para los diferentes palos */
+.heart, .diamond {
+    color: red;
+}
+
+.spade, .club {
+    color: black;
+}
+
+/* Footer fijo en la parte inferior */
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+.fixed-bottom a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
